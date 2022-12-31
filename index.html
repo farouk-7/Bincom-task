@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd2ed53881.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>OYEDEJI OPEOLUWA</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#home">Oyedeji Opeoluwa</a></div>
+            <ul class="nav-items">
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#about-me" class="nav-link">about</a></li>
+                <li><a href="#portfolio" class="nav-link">portfolio</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+                
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>  
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <h1>My Name is Oyedeji Opeoluwa Farouk and I am a Front End Web Developer</h1>
+            <p>My job is simple, I am responsible for developing user-friendly website making user interact esily with the page.<br>
+            I implements visual elements that users sees and interact with in a web application.</p>
+            <div class="button">
+                <a href="#contact"><button class="btn">Hire Me</button></a>
+                <a href="/images/my-cv.docx" download class="btn1">Download Resume</button></a>
+                </div>
+        </div>
+        
+    </section>
+    
+    <section id="about-me">
+        <div class="container">
+            <h1>ABOUT-ME</h1>
+            <div class="hr"></div>
+        <div class="cards">
+                <div class="card1">
+                    <h4>BIOGRAPHY</h4>
+                    <p>My name is Oyedeji Opeoluwa Farouk, I am a <em><strong> front end developer</strong></em> based in Lagos State, Nigeria.
+                        My Job is to create user friendly web pages that users can interact with easily. My goal is to work as a software developer
+                        in a reputable firm as well as learn to increase my knowlegde and skills in my field. My hobbies are writting codes, playing video
+                        games, travelling an listening to musics
+                    </p>
+                </div>
+            
+            <div class="card2">
+                <h4>SKILLS</h4>
+                <ul>
+                    <li>Well-versed in HTML5, CSS, JAVASCRIPT,Tailwind and basic knowledge in React.</li>
+                    <li>Critical and analytical thinking with keen attention for details.</li>
+                    <li>Excellent and result-oriented team player with ability to work independently or under minimum supervision.</li>
+                    <li>Ability to adapt well to new environments and learn new processes quickly to achieve outstanding success</li>
+                </ul>
+
+            </div>
+
+        </div>
+    <div class="card_extra">
+        <div class="card3">
+            <h4>EDUCATION</h4>
+            <ul>
+                <li>Yaba College Of Technology (<b>Microbiology</b>).</li>
+                <li>UTIVA Tech Camp (<b>Full Stack Development</b>).</li>
+                <li>Other Resources on Web Development from Youtube, Google.com and Stackoverflow.com.</li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="pictures">
+        <h2>My Pictures</h2>
+        <div class="pics_container">
+            <img src="./images/1.jpg" height="300px">
+            <img src="./images/2.jpg" height="300px">
+            <img src="./images/3.jpg" height="300px">
+            <img src="./images/4.jpg" height="300px">
+            <img src="./images/5.jpg" height="300px">
+        </div>
+    </div>
+
+
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="projects">
+                <h1>PORTFOLIO</h1>
+                <div class="hr"></div>
+
+             <div class="projects_box">
+                <div class="project">
+                    <h2> blogr-site drop-down menu</h2>
+                     <div className='demo'>
+                        <h3><a href='https://myblogr.netlify.app/'>View Demo</a></h3>
+                     </div> 
+                </div>
+                <div class="project">
+                    <h2>A metabnb<br>webpage</h2>
+                    <div className='demo'>
+                        <h3><a href='https://zuri-metabnb.netlify.app/'>View Demo</a></h3>
+                     </div>
+                </div>
+                <div class="project">
+                    <h2>Online Card<br>Form</h2>
+                    <div className='demo'>
+                        <h3><a href='https://onlinecardform.netlify.app/'>View Demo</a></h3>
+                     </div>
+                </div>
+                <div class="project">
+                    <h2>A Desktop react blog website</h2>
+                    <div className='demo'>
+                        <h3><a href='https://simple-reactblog.netlify.app/'>View Demo</a></h3>
+                     </div>
+                </div>
+             </div>
+
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content">
+           <h1>CONTACT</h1>
+           <div class="hr"></div>
+           <h5 class="info">Tel:09072255545  Email:opeoluwaoyedejif@gmail.com</h5>
+           <p>Hi there, contact me to ask about anything you have in mind.</p>
+           <form id="my_form" action="https://formsubmit.co/f7d7cb32078066d504de912b0a069bfa" method="POST">
+             <div class="names">
+                <label>FirstName
+                    <input required type="text" id="first_name" placeholder="Enter your firstname">
+                </label>
+                <label>Last name
+                    <input required type="text" id='last_name' placeholder='Enter your last name'></input>
+                </label>
+             </div>
+             
+              <label>Email
+                <input required type='email' id='email' placeholder='yourname@email.com'></input>
+              </label>
+
+              <label>Message
+                <textarea id='message' placeholder='send a message and i will reply as soon as possible...'></textarea>
+                <div id='message_error'></div>
+              </label>
+              <button type='submit' id='btn__submit' onclick="handleClick()">Send message</button>
+           </form>
+        </div>
+
+        </div>
+
+    </section>
+    <section id="footer">
+        <div class="footer_container">
+            <h4>Oyedeji Opeoluwa</h4>
+            <p>Developed and created by Oyedeji opeoluwa, Dec. 2022.</p>
+            <p>2022 Copyright: opeoluwaoyedeji.com</p>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="text.js"></script>
+</body>
+</html>

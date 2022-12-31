@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #344054;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Andika', sans-serif;
+}
+.navbar{
+    height: 60px;
+    background-color:#fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .25);
+}
+.container{
+    max-width: 1100px;
+    margin: 0px auto;   
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.logo{
+    color: rgb(93, 87, 87);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar ul{
+    display: flex;
+    gap:60px;
+}
+.navbar ul li{
+    list-style: none;
+    text-transform: capitalize;   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(93, 87, 87);
+    font-size: 20px;
+    padding: 2px 5px;
+}
+.navbar ul li a:hover{
+    color:rgb(238, 70, 70);
+}
+.hamburger{
+    display: none; 
+   cursor: pointer;
+}
+.hamburger .line{
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   color: #fff;
+   background-color: rgb(93, 87, 87);
+}
+#home h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+#home p{
+    padding-top: 30px;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+.btn{
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 70, 70);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Bubblegum Sans', cursive;
+    background-color: rgb(238, 70, 70);
+}
+.btn:hover{
+    color: rgb(93, 87, 87);
+    background-color:#fff;
+    border: 1px solid rgb(93, 87, 87);
+    transition: 1s;
+}
+.btn1{
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(93, 87, 87);
+    color: rgb(93, 87, 87);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Bubblegum Sans', cursive;
+    background-color: #fff;
+}
+.btn1:hover{
+    color: #fff;
+    background-color: rgb(238, 70, 70);
+    border: 1px solid rgb(238, 70, 70);
+    transition: 1s;
+}
+
+#about-me h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.hr{
+    height: 2px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(238, 70, 70);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.card1{
+    width: 500px;
+    height: fit-content;
+    padding: 10px 10px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    background-color:  rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px; 
+}
+.card1 h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card2{
+    width: 500px;
+    height: fit-content;
+    padding: 10px 10px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    background-color:  rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+}
+.card2 h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card_extra{
+    display: flex;
+    justify-content: center;
+}
+.card3{ 
+    width: 500px;
+    height: fit-content;
+    padding: 10px 10px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    background-color:  rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+}
+.card3 h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.pictures{
+    margin-top: 10px;
+}
+.pictures h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pics_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.pics_container img{
+    border-radius: 10px;
+}
+#portfolio h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.projects_box{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.project{
+    cursor: pointer;
+    width: 500px;
+    height: fit-content;
+    padding: 10px 10px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    background-color:  rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+}
+#contact h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.info{
+
+}
+#contact p{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.names{
+    display: flex;
+    gap: 20px;
+}
+.flex_items{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first_name,
+#last_name,
+#email{
+    outline: none;
+    height: 40px;
+    width: 300px;
+    border: 1px solid rgb(93, 87, 87);
+    border-radius: 8px;
+    padding-left: 14px;
+    font-size: 15px;
+}
+#message{
+    outline: none;
+    border: 1px solid rgb(93, 87, 87);
+    height: 132px;
+    width: 720px;
+    border-radius: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    line-height: 24px;
+    font-size: 16px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #344054;
+}
+input{
+    margin-top: 5px;
+}
+textarea{
+  margin-top: 5px;
+}
+input::placeholder{
+    font-size: 14px;
+    color: #344054;
+    font-family: 'Andika', sans-serif;
+}
+#btn__submit{
+    height: 48px;
+    width: 720px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #1570EF;
+    border: none;
+    cursor: pointer;
+    font-family: 'Andika', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#message_error{
+    color: red;
+}
+#footer{
+    height: 100px;
+    background-color: #252f3f;
+}
+.footer_container{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(155, 154, 154);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .line:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .nav-items{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(9, 8, 8);
+        width: 100%;
+        text-align: center;
+        transition:0.3s; 
+    }
+    .navbar ul li{
+        margin: 10px 0;    
+    }
+    .nav-items.active{
+        left: 0;
+    }
+    .navbar .container{
+        padding: 0px 20px;
+    }
+    #home h1{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #home p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .cards{
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+    .card1{
+        width: 320px;
+    }
+    .card2{
+        width: 320px;
+    }
+    .card3{ 
+        width: 320px;
+    }
+    .pics_container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .projects_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .project{
+        width: 320px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #contact h1{
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #contact p{
+        text-align: center;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .info{
+        margin: 0px 20px;
+        text-align: center;
+    }
+    .names{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #email{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #message{
+        outline: none;
+        border: 1px solid rgb(93, 87, 87);
+        height: 132px;
+        width: 310px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #btn__submit{
+        width: 310px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #footer{
+        height: 150px;
+        background-color: #252f3f;
+    }
+}
+@media(max-width:768px){
+    #home h1{
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
